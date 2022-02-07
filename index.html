@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_js_selector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $(".btn2").hide();
+            // $("#btn1"). hide();
+            // $("p").hide();
+
+            // $(".btn2").click(function(){
+            //     $(this).hide();
+            // });
+
+            // $("img").hide();
+            // $("#btn1").click(function(){
+            //     $("img").show();
+            // });    
+            // $(".btn2").click(function(){
+            //     $("img").hide();
+            // }) 
+
+            $("#lluna").hide();
+            $("#sol").click(function(){
+                $("#lluna").show();
+                $(this).hide();
+               
+            });    
+            $("#lluna").click(function(){
+                $("#sol").show();
+                $(this).hide();
+              
+            })           
+
+        });
+
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        img{
+            width: 500px;
+            height: 500px;
+        }
+        .ninotets{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <button id="btn1" type="button">hola</button>
+    <button class="btn2" type="button">adèu</button> -->
+    <!-- <img src="img/captura1.jpg" alt=""> -->
+    <div class="ninotets">
+        <img id="sol" src="img/sol2.png" alt="sol">
+        <img id="lluna" src="img/lluna3.png" alt="lluna">
+    </div>
+
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, enim ad quae numquam consequatur impedit ullam, reprehenderit facere tempore autem quam facilis, quos quaerat veniam sed harum officia nemo at!</p> -->
+</body>
+</html>
